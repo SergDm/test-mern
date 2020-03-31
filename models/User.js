@@ -1,6 +1,7 @@
 const { Schema, model, Types } = require('mongoose')
 
 const schemaUser = new Schema({
+  name: String,
   email: { 
     type: String, 
     required: true, 
@@ -10,9 +11,9 @@ const schemaUser = new Schema({
     type: String, 
     required: true 
   },
-  links: [{
+  product: [{
     type: Types.ObjectId,
-    ref: 'Link'
+    ref: 'Product'
   }]
 })
 

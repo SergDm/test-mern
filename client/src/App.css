@@ -1,0 +1,8 @@
+.app-wrapper {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  grid-template-rows: 80px 17fr 2fr;
+}
